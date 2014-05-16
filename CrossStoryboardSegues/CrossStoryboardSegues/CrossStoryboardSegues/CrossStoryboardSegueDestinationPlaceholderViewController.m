@@ -1,0 +1,5 @@
+#import "CrossStoryboardSegueDestinationPlaceholderViewController.h"
+
+@implementation CrossStoryboardSegueDestinationPlaceholderViewController
+@synthesize destinationStoryboardName=_destinationStoryboardName, destinationViewControllerIdentifier=_destinationViewControllerIdentifier;
+@end
