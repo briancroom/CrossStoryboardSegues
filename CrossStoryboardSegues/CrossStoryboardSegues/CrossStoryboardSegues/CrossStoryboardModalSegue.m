@@ -1,5 +1,6 @@
 #import "CrossStoryboardModalSegue.h"
 #import "CrossStoryboardSegueDestination.h"
+#import "UIStoryboard+CrossStoryboardSegues.h"
 
 @implementation CrossStoryboardModalSegue
 
@@ -11,7 +12,7 @@
         @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:[NSString stringWithFormat:@"Can't perform a cross-storyboard presentation with view controller %@ that does not conform to CrossStoryboardSegueDestination", destinationPlaceholderViewController] userInfo:nil];
     }
 
-    UIStoryboard *destinationStoryboard = [[sourceViewController.storyboard class] storyboardWithName:destinationPlaceholderViewController.destinationStoryboardName bundle:nil];
+    UIStoryboard *destinationStoryboard = [sourceViewController.storyboard crossstoryboardsegues_storyboardWithName:destinationPlaceholderViewController.destinationStoryboardName bundle:nil];
     UIViewController *destinationViewController;
 
     if (destinationPlaceholderViewController.destinationViewControllerIdentifier) {
