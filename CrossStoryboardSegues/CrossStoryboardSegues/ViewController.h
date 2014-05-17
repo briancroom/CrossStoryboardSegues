@@ -6,6 +6,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *presentInitialButton;
 @property (weak, nonatomic) IBOutlet UIButton *pushToOtherButton;
 @property (weak, nonatomic) IBOutlet UIButton *presentOtherButton;
+@property (weak, nonatomic) IBOutlet UIButton *pushToDifferentBundleButton;
+@property (weak, nonatomic) IBOutlet UIButton *presentDifferentBundleButton;
 
 @property (weak, nonatomic) IBOutlet UIButton *brokenPushButton;
 @property (weak, nonatomic) IBOutlet UIButton *brokenPresentButton;
@@ -20,5 +22,4 @@
 
 @end
 
-@interface OtherViewController : UIViewController
-@end
+@interface OtherViewController : UIViewController @end

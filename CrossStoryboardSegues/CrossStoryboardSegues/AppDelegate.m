@@ -2,8 +2,8 @@
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"DifferentBundle" withExtension:@"bundle"]] load];
     return YES;
 }
 

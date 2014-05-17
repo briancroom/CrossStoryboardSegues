@@ -7,7 +7,6 @@
 @end
 
 @implementation CrossStoryboardSegueDestinationProxy
-@synthesize destinationStoryboardName=_destinationStoryboardName, destinationViewControllerIdentifier=_destinationViewControllerIdentifier;
 
 + (instancetype)proxy {
     return [[self alloc] init];
@@ -44,6 +43,9 @@
     if ([keyPath isEqualToString:@"destinationStoryboardName"]) {
         self.destinationStoryboardName = value;
     }
+    else if ([keyPath isEqualToString:@"destinationStoryboardBundleIdentifier"]) {
+        self.destinationStoryboardBundleIdentifier = value;
+    }
     else if ([keyPath isEqualToString:@"destinationViewControllerIdentifier"]) {
         self.destinationViewControllerIdentifier = value;
     }
@@ -61,7 +63,8 @@
 }
 
 - (void)instantiateDestinationViewControllerWithSourceStoryboard:(UIStoryboard *)sourceStoryboard {
-    UIStoryboard *storyboard = [sourceStoryboard crossstoryboardsegues_storyboardWithName:self.destinationStoryboardName bundle:nil];
+    NSBundle *bundle = self.destinationStoryboardBundleIdentifier ? [NSBundle bundleWithIdentifier:self.destinationStoryboardBundleIdentifier] : nil;
+    UIStoryboard *storyboard = [sourceStoryboard crossstoryboardsegues_storyboardWithName:self.destinationStoryboardName bundle:bundle];
 
     if (self.destinationViewControllerIdentifier) {
         self.realDestinationViewController = [storyboard instantiateViewControllerWithIdentifier:self.destinationViewControllerIdentifier];

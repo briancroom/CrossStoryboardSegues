@@ -4,6 +4,7 @@
 @interface CrossStoryboardSegueDestinationProxy : NSProxy <CrossStoryboardSegueDestination>
 
 @property (nonatomic, strong) NSString *destinationStoryboardName;
+@property (nonatomic, strong) NSString *destinationStoryboardBundleIdentifier;
 @property (nonatomic, strong) NSString *destinationViewControllerIdentifier;
 
 @property (nonatomic, strong, readonly) UIViewController *realDestinationViewController;

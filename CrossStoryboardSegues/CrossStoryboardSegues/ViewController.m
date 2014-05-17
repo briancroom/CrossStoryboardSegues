@@ -24,5 +24,4 @@
 }
 @end
 
-@implementation OtherViewController
-@end
+@implementation OtherViewController @end
