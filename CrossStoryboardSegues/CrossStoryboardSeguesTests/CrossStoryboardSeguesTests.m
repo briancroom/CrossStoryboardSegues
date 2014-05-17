@@ -1,6 +1,7 @@
 #import <XCTest/XCTest.h>
 #import "ViewController.h"
 #import "UIStoryboard+CrossStoryboardSegues.h"
+
 @interface SubclassedStoryboard : UIStoryboard
 @property (nonatomic) NSString *value;
 @end
@@ -63,6 +64,18 @@ static void tapButton(UIButton *button) {
     tapButton(self.startingViewController.pushToInitialButton);
     UIViewController *pushedViewController = self.navController.visibleViewController;
     XCTAssertEqual(self.startingStoryboard.value, ((SubclassedStoryboard *)pushedViewController.storyboard).value, @"Didn't pass value from first storyboard to second");
+}
+
+- (void)testAllowsPassingValuesToTheDestinationViewControllerFromPrepareForSegue {
+    tapButton(self.startingViewController.pushToInitialButton);
+    InitialViewController *pushedViewController = (InitialViewController *)self.navController.visibleViewController;
+    XCTAssertNotNil(pushedViewController.value, @"Didn't pass value to the destination view controller");
+}
+
+- (void)testAllowsPassingValuesToTheDestinationViewControllerFromStoryboardRuntimeAttributes {
+    tapButton(self.startingViewController.pushToInitialButton);
+    InitialViewController *pushedViewController = (InitialViewController *)self.navController.visibleViewController;
+    XCTAssertNotNil(pushedViewController.valueFromStoryboard, @"Didn't pass value to the destination view controller");
 }
 
 - (void)testPresentsInitialViewControllerOfNextStoryboard {

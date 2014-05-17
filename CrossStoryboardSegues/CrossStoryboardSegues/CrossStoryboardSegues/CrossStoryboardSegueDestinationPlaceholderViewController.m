@@ -1,5 +1,10 @@
 #import "CrossStoryboardSegueDestinationPlaceholderViewController.h"
+#import "CrossStoryboardSegueDestinationProxy.h"
 
 @implementation CrossStoryboardSegueDestinationPlaceholderViewController
-@synthesize destinationStoryboardName=_destinationStoryboardName, destinationViewControllerIdentifier=_destinationViewControllerIdentifier;
+
+- (id)awakeAfterUsingCoder:(NSCoder *)aDecoder {
+    return [CrossStoryboardSegueDestinationProxy proxy];
+}
+
 @end

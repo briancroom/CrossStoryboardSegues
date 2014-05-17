@@ -1,5 +1,4 @@
 #import <UIKit/UIKit.h>
-#import "CrossStoryboardSegueDestination.h"
 
-@interface CrossStoryboardSegueDestinationPlaceholderViewController : UIViewController <CrossStoryboardSegueDestination>
+@interface CrossStoryboardSegueDestinationPlaceholderViewController : UIViewController
 @end

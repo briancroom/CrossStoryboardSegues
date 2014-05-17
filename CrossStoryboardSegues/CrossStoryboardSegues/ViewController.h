@@ -12,6 +12,13 @@
 @end
 
 @interface InitialViewController : UIViewController
+@property (nonatomic, strong) NSString *value;
+@property (nonatomic, strong) NSString *valueFromStoryboard;
+
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *valueFromStoryboardLabel;
+
 @end
+
 @interface OtherViewController : UIViewController
 @end

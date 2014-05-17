@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="xdT-1I-v6M">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -33,15 +34,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rM-k1-PSX">
+                                <rect key="frame" x="132" y="140" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value From Storyboard:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mde-W9-Xhe">
+                                <rect key="frame" x="65" y="169" width="181" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="d46-x6-DQZ" secondAttribute="centerX" constant="5" id="5tt-S9-lbQ"/>
                             <constraint firstAttribute="centerY" secondItem="kV0-Kd-eWe" secondAttribute="centerY" id="7oN-mf-yhR"/>
+                            <constraint firstAttribute="centerX" secondItem="Mde-W9-Xhe" secondAttribute="centerX" constant="4.5" id="Img-ek-lKg"/>
                             <constraint firstItem="d46-x6-DQZ" firstAttribute="top" secondItem="CcL-Ji-YnP" secondAttribute="bottom" constant="88" id="fW2-C3-iRd"/>
+                            <constraint firstItem="Mde-W9-Xhe" firstAttribute="top" secondItem="5rM-k1-PSX" secondAttribute="bottom" constant="8" id="j8e-QE-Slr"/>
                             <constraint firstAttribute="centerX" secondItem="kV0-Kd-eWe" secondAttribute="centerX" constant="-0.5" id="rbd-xB-wjv"/>
+                            <constraint firstItem="5rM-k1-PSX" firstAttribute="top" secondItem="d46-x6-DQZ" secondAttribute="bottom" constant="8" id="vhF-Mv-e2k"/>
+                            <constraint firstAttribute="centerX" secondItem="5rM-k1-PSX" secondAttribute="centerX" constant="5" id="xh4-D8-DZr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="valueFromStoryboardLabel" destination="Mde-W9-Xhe" id="S0D-nA-aaU"/>
+                        <outlet property="valueLabel" destination="5rM-k1-PSX" id="kmn-rF-3pl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UI4-nZ-3uq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

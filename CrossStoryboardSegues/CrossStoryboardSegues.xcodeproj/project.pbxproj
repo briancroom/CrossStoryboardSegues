@@ -26,6 +26,7 @@
 		34B333591925E24E009466A5 /* CrossStoryboardModalSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B333581925E24E009466A5 /* CrossStoryboardModalSegue.m */; };
 		34B3335C19263FF6009466A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3335B19263FF6009466A5 /* ViewController.m */; };
 		34B3337119266660009466A5 /* UIStoryboard+CrossStoryboardSegues.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3337019266660009466A5 /* UIStoryboard+CrossStoryboardSegues.m */; };
+		34B3337E19270D00009466A5 /* CrossStoryboardSegueDestinationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3337D19270D00009466A5 /* CrossStoryboardSegueDestinationProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		34B3335B19263FF6009466A5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		34B3336F19266660009466A5 /* UIStoryboard+CrossStoryboardSegues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+CrossStoryboardSegues.h"; sourceTree = "<group>"; };
 		34B3337019266660009466A5 /* UIStoryboard+CrossStoryboardSegues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+CrossStoryboardSegues.m"; sourceTree = "<group>"; };
+		34B3337C19270D00009466A5 /* CrossStoryboardSegueDestinationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossStoryboardSegueDestinationProxy.h; sourceTree = "<group>"; };
+		34B3337D19270D00009466A5 /* CrossStoryboardSegueDestinationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossStoryboardSegueDestinationProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,8 @@
 				34B333581925E24E009466A5 /* CrossStoryboardModalSegue.m */,
 				34B3336F19266660009466A5 /* UIStoryboard+CrossStoryboardSegues.h */,
 				34B3337019266660009466A5 /* UIStoryboard+CrossStoryboardSegues.m */,
+				34B3337C19270D00009466A5 /* CrossStoryboardSegueDestinationProxy.h */,
+				34B3337D19270D00009466A5 /* CrossStoryboardSegueDestinationProxy.m */,
 			);
 			path = CrossStoryboardSegues;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34B3335C19263FF6009466A5 /* ViewController.m in Sources */,
+				34B3337E19270D00009466A5 /* CrossStoryboardSegueDestinationProxy.m in Sources */,
 				34B333501925DFFC009466A5 /* CrossStoryboardPushSegue.m in Sources */,
 				34B333541925E16A009466A5 /* CrossStoryboardSegueDestinationPlaceholderViewController.m in Sources */,
 				34B3337119266660009466A5 /* UIStoryboard+CrossStoryboardSegues.m in Sources */,
@@ -370,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -402,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -416,6 +422,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrossStoryboardSegues/CrossStoryboardSegues-Prefix.pch";
 				INFOPLIST_FILE = "CrossStoryboardSegues/CrossStoryboardSegues-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -429,6 +436,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrossStoryboardSegues/CrossStoryboardSegues-Prefix.pch";
 				INFOPLIST_FILE = "CrossStoryboardSegues/CrossStoryboardSegues-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -450,6 +458,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "CrossStoryboardSeguesTests/CrossStoryboardSeguesTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -468,6 +477,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrossStoryboardSegues/CrossStoryboardSegues-Prefix.pch";
 				INFOPLIST_FILE = "CrossStoryboardSeguesTests/CrossStoryboardSeguesTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
