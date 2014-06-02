@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXI-xL-Jt5">
-                                <rect key="frame" x="101" y="164" width="119" height="36"/>
+                                <rect key="frame" x="101" y="72" width="119" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Push to Initial">
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkO-eB-8hk">
-                                <rect key="frame" x="90" y="208" width="141" height="36"/>
+                                <rect key="frame" x="90" y="116" width="141" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Present to Initial">
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P94-LE-wkh">
-                                <rect key="frame" x="100" y="252" width="123" height="36"/>
+                                <rect key="frame" x="99" y="160" width="123" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Push to Other">
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHB-8a-vvA">
-                                <rect key="frame" x="89" y="296" width="145" height="36"/>
+                                <rect key="frame" x="88" y="204" width="145" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Present to Other">
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-va-nfy">
-                                <rect key="frame" x="53" y="340" width="215" height="36"/>
+                                <rect key="frame" x="53" y="248" width="215" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Push to Different Bundle">
@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBJ-AU-UqP">
-                                <rect key="frame" x="42" y="384" width="237" height="36"/>
+                                <rect key="frame" x="42" y="292" width="237" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Present to Different Bundle">
@@ -112,16 +112,16 @@
                             <constraint firstItem="lkO-eB-8hk" firstAttribute="top" secondItem="YXI-xL-Jt5" secondAttribute="bottom" constant="8" id="9D0-zJ-ngQ"/>
                             <constraint firstAttribute="centerX" secondItem="YXI-xL-Jt5" secondAttribute="centerX" id="C0K-5W-m3f"/>
                             <constraint firstItem="hHB-8a-vvA" firstAttribute="top" secondItem="P94-LE-wkh" secondAttribute="bottom" constant="8" symbolic="YES" id="EF3-Pa-kvD"/>
-                            <constraint firstAttribute="centerX" secondItem="hHB-8a-vvA" secondAttribute="centerX" constant="-1.5" id="HpH-sa-rcb"/>
+                            <constraint firstAttribute="centerX" secondItem="hHB-8a-vvA" secondAttribute="centerX" id="HpH-sa-rcb"/>
                             <constraint firstItem="fBJ-AU-UqP" firstAttribute="top" secondItem="UpC-va-nfy" secondAttribute="bottom" constant="8" symbolic="YES" id="Tq3-ok-LF1"/>
-                            <constraint firstItem="YXI-xL-Jt5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="ZOG-xj-CbW"/>
+                            <constraint firstItem="YXI-xL-Jt5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="ZOG-xj-CbW"/>
                             <constraint firstAttribute="centerX" secondItem="DOP-ub-x0y" secondAttribute="centerX" id="euE-hO-GG4"/>
                             <constraint firstAttribute="centerX" secondItem="UpC-va-nfy" secondAttribute="centerX" id="hFo-4E-hp8"/>
                             <constraint firstItem="hHB-8a-vvA" firstAttribute="centerX" secondItem="P94-LE-wkh" secondAttribute="centerX" id="l3B-oK-zwM"/>
                             <constraint firstItem="fBJ-AU-UqP" firstAttribute="centerX" secondItem="UpC-va-nfy" secondAttribute="centerX" id="qT8-cs-eJb"/>
                             <constraint firstAttribute="centerX" secondItem="lkO-eB-8hk" secondAttribute="centerX" id="t0e-dI-KOu"/>
                             <constraint firstItem="UpC-va-nfy" firstAttribute="top" secondItem="hHB-8a-vvA" secondAttribute="bottom" constant="8" symbolic="YES" id="wt8-K7-Y9j"/>
-                            <constraint firstAttribute="centerX" secondItem="P94-LE-wkh" secondAttribute="centerX" constant="-1.5" id="wxz-e7-Mx8"/>
+                            <constraint firstAttribute="centerX" secondItem="P94-LE-wkh" secondAttribute="centerX" id="wxz-e7-Mx8"/>
                             <constraint firstItem="DOP-ub-x0y" firstAttribute="top" secondItem="fJt-iJ-dYs" secondAttribute="bottom" constant="8" id="zJc-fQ-Car"/>
                         </constraints>
                     </view>
