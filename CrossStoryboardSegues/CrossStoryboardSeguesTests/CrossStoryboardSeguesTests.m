@@ -57,7 +57,7 @@ static void tapButton(UIButton *button) {
     XCTAssertTrue([self.navController.visibleViewController isKindOfClass:NSClassFromString(@"DifferentBundleViewController")], @"Didn't push to DifferentBundleViewController");
 }
 
-- (void)testPushDestinationHasUsesSameStoryboardClassAsSource {
+- (void)testPushDestinationUsesSameStoryboardClassAsSource {
     tapButton(self.startingViewController.pushToInitialButton);
     XCTAssertEqual([self.startingViewController.storyboard class], [self.navController.visibleViewController.storyboard class], @"Used wrong storyboard class");
 }
@@ -102,7 +102,7 @@ static void tapButton(UIButton *button) {
     XCTAssertTrue([self.navController.visibleViewController isKindOfClass:NSClassFromString(@"DifferentBundleViewController")], @"Didn't present DifferentBundleViewController");
 }
 
-- (void)testPresentDestinationHasUsesSameStoryboardClassAsSource {
+- (void)testPresentDestinationUsesSameStoryboardClassAsSource {
     tapButton(self.startingViewController.presentInitialButton);
     XCTAssertEqual([self.startingViewController.storyboard class], [self.navController.visibleViewController.storyboard class], @"Used wrong storyboard class");
 }
