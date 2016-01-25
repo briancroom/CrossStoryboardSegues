@@ -10,29 +10,29 @@
 	<string>CrossStoryboardSegues</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1B403C7A-AF5D-4FC9-8981-C318B1A85A0F</key>
+		<key>BDD23595BE328006764B7853D70437D16524A34F</key>
 		<string>https://github.com/pivotal-brian-croom/CrossStoryboardSegues.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CrossStoryboardSegues/CrossStoryboardSegues.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1B403C7A-AF5D-4FC9-8981-C318B1A85A0F</key>
+		<key>BDD23595BE328006764B7853D70437D16524A34F</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/pivotal-brian-croom/CrossStoryboardSegues.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1B403C7A-AF5D-4FC9-8981-C318B1A85A0F</string>
+	<string>BDD23595BE328006764B7853D70437D16524A34F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1B403C7A-AF5D-4FC9-8981-C318B1A85A0F</string>
+			<string>BDD23595BE328006764B7853D70437D16524A34F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CrossStoryboardSegues</string>
 		</dict>

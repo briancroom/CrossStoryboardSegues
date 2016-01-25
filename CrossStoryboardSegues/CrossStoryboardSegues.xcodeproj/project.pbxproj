@@ -30,6 +30,9 @@
 		34B3339119274588009466A5 /* Different.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B3339019274588009466A5 /* Different.storyboard */; };
 		34B33392192745E7009466A5 /* DifferentBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34B33383192744AD009466A5 /* DifferentBundle.bundle */; };
 		34B3339A19274A28009466A5 /* DifferentBundleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3339919274A28009466A5 /* DifferentBundleViewController.m */; };
+		34C0CB4919C8680C00B69B93 /* ViewControllerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C0CB4819C8680C00B69B93 /* ViewControllerProxy.m */; };
+		34C0CB8719C8ED8D00B69B93 /* CrossStoryboardSegueDestinationPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C0CB8619C8ED8D00B69B93 /* CrossStoryboardSegueDestinationPreviewView.m */; };
+		34D01B27193CAA1A007CEB8D /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D01B26193CAA1A007CEB8D /* Main-iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,11 @@
 		34B3339019274588009466A5 /* Different.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Different.storyboard; sourceTree = "<group>"; };
 		34B3339819274A28009466A5 /* DifferentBundleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifferentBundleViewController.h; sourceTree = "<group>"; };
 		34B3339919274A28009466A5 /* DifferentBundleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DifferentBundleViewController.m; sourceTree = "<group>"; };
+		34C0CB4719C8680C00B69B93 /* ViewControllerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerProxy.h; sourceTree = "<group>"; };
+		34C0CB4819C8680C00B69B93 /* ViewControllerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerProxy.m; sourceTree = "<group>"; };
+		34C0CB8519C8ED8D00B69B93 /* CrossStoryboardSegueDestinationPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossStoryboardSegueDestinationPreviewView.h; sourceTree = "<group>"; };
+		34C0CB8619C8ED8D00B69B93 /* CrossStoryboardSegueDestinationPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossStoryboardSegueDestinationPreviewView.m; sourceTree = "<group>"; };
+		34D01B26193CAA1A007CEB8D /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +170,7 @@
 				34B333271925DE30009466A5 /* AppDelegate.h */,
 				34B333281925DE30009466A5 /* AppDelegate.m */,
 				34B3332A1925DE30009466A5 /* Main.storyboard */,
+				34D01B26193CAA1A007CEB8D /* Main-iPad.storyboard */,
 				34B333551925E1A6009466A5 /* Next.storyboard */,
 				34B333301925DE30009466A5 /* Images.xcassets */,
 				34B3331F1925DE30009466A5 /* Supporting Files */,
@@ -212,6 +221,10 @@
 				34B3337019266660009466A5 /* UIStoryboard+CrossStoryboardSegues.m */,
 				34B3337C19270D00009466A5 /* CrossStoryboardSegueDestinationProxy.h */,
 				34B3337D19270D00009466A5 /* CrossStoryboardSegueDestinationProxy.m */,
+				34C0CB4719C8680C00B69B93 /* ViewControllerProxy.h */,
+				34C0CB4819C8680C00B69B93 /* ViewControllerProxy.m */,
+				34C0CB8519C8ED8D00B69B93 /* CrossStoryboardSegueDestinationPreviewView.h */,
+				34C0CB8619C8ED8D00B69B93 /* CrossStoryboardSegueDestinationPreviewView.m */,
 			);
 			path = CrossStoryboardSegues;
 			sourceTree = "<group>";
@@ -334,6 +347,7 @@
 				34B333561925E1A6009466A5 /* Next.storyboard in Resources */,
 				34B333231925DE30009466A5 /* InfoPlist.strings in Resources */,
 				34B3332C1925DE30009466A5 /* Main.storyboard in Resources */,
+				34D01B27193CAA1A007CEB8D /* Main-iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,9 +376,11 @@
 			files = (
 				34B3335C19263FF6009466A5 /* ViewController.m in Sources */,
 				34B3337E19270D00009466A5 /* CrossStoryboardSegueDestinationProxy.m in Sources */,
+				34C0CB8719C8ED8D00B69B93 /* CrossStoryboardSegueDestinationPreviewView.m in Sources */,
 				34B333501925DFFC009466A5 /* CrossStoryboardPushSegue.m in Sources */,
 				34B333541925E16A009466A5 /* CrossStoryboardSegueDestinationPlaceholderViewController.m in Sources */,
 				34B3337119266660009466A5 /* UIStoryboard+CrossStoryboardSegues.m in Sources */,
+				34C0CB4919C8680C00B69B93 /* ViewControllerProxy.m in Sources */,
 				34B333291925DE30009466A5 /* AppDelegate.m in Sources */,
 				34B333251925DE30009466A5 /* main.m in Sources */,
 				34B333591925E24E009466A5 /* CrossStoryboardModalSegue.m in Sources */,
